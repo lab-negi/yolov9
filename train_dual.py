@@ -13,6 +13,7 @@ import torch
 import torch.distributed as dist
 import torch.nn as nn
 import yaml
+from comet_ml import Experiment
 from torch.optim import lr_scheduler
 from tqdm import tqdm
 
@@ -641,4 +642,7 @@ def run(**kwargs):
 
 if __name__ == "__main__":
     opt = parse_opt()
+
+    experiment = Experiment(project_name="yolov9", log_code=True)
+    experiment.log_code(folder="./")
     main(opt)
