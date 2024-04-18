@@ -1,0 +1,100 @@
+detect_dual: weights=['./runs/train/exp11/weights/best.pt'], source=../datasets/negi/test/1/, data=./negi.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLO 🚀 v0.1-76-g519346b Python-3.10.12 torch-2.1.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4090, 24209MiB)
+
+Fusing layers... 
+yolo summary: 604 layers, 50705208 parameters, 0 gradients, 236.7 GFLOPs
+image 1/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_071356396_iOS.jpg: 640x480 1 green_onion_2, 77.6ms
+image 2/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_071609689_iOS.jpg: 640x480 1 green_onion_1, 8.9ms
+image 3/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_072008839_iOS.jpg: 640x480 1 green_onion_1, 8.9ms
+image 4/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_072116289_iOS.jpg: 640x480 1 green_onion_1, 8.9ms
+image 5/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_072350026_iOS.jpg: 640x480 1 green_onion_2, 9.3ms
+image 6/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_072528596_iOS.jpg: 640x480 1 green_onion_2, 8.9ms
+image 7/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_072926778_iOS.jpg: 640x480 1 green_onion_1, 8.9ms
+image 8/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_073023812_iOS.jpg: 640x480 1 green_onion_1, 8.9ms
+image 9/93 /home/it/work/negi/yolo/datasets/negi/test/1/20230630_073305618_iOS.jpg: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 10/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0461.JPG: 640x480 1 green_onion_1, 8.9ms
+image 11/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0481.JPG: 640x480 2 green_onion_1s, 9.6ms
+image 12/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0507.JPG: 640x480 1 green_onion_1, 9.8ms
+image 13/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0565.JPG: 640x480 1 green_onion_1, 8.9ms
+image 14/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0601.JPG: 640x480 1 green_onion_1, 9.2ms
+image 15/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0610.JPG: 640x480 1 green_onion_1, 8.8ms
+image 16/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0634.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 17/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0644.JPG: 640x480 1 green_onion_1, 8.9ms
+image 18/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_0833.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 19/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7720.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 20/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7727.JPG: 640x480 1 green_onion_1, 9.0ms
+image 21/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7742.JPG: 640x480 1 green_onion_1, 8.8ms
+image 22/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7761.JPG: 640x480 1 green_onion_2, 8.9ms
+image 23/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7767.JPG: 640x480 1 green_onion_1, 8.9ms
+image 24/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7771.JPG: 640x480 1 green_onion_1, 8.8ms
+image 25/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7775.JPG: 640x480 1 green_onion_1, 8.9ms
+image 26/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7795.JPG: 640x480 1 green_onion_1, 8.8ms
+image 27/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7802.JPG: 640x480 1 green_onion_1, 8.9ms
+image 28/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7811.JPG: 640x480 1 green_onion_1, 8.9ms
+image 29/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7826.JPG: 640x480 1 green_onion_1, 8.8ms
+image 30/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7902.JPG: 640x480 1 green_onion_1, 8.9ms
+image 31/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7910.JPG: 640x480 1 green_onion_1, 9.4ms
+image 32/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7953.JPG: 640x480 1 green_onion_1, 9.7ms
+image 33/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_7973.JPG: 640x480 1 green_onion_1, 8.9ms
+image 34/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8391.jpg: 640x480 1 green_onion_2, 8.9ms
+image 35/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8395.jpg: 640x480 1 green_onion_1, 1 green_onion_2, 9.2ms
+image 36/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8406.jpg: 640x480 1 green_onion_1, 9.6ms
+image 37/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8422.jpg: 640x480 1 green_onion_1, 9.6ms
+image 38/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8430.jpg: 640x480 1 green_onion_1, 9.2ms
+image 39/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8453.jpg: 640x480 1 green_onion_1, 9.5ms
+image 40/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8514.jpg: 640x480 1 green_onion_1, 8.8ms
+image 41/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8528.JPG: 640x480 1 green_onion_1, 9.4ms
+image 42/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8536.JPG: 640x480 1 green_onion_1, 8.8ms
+image 43/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8560.JPG: 640x480 1 green_onion_1, 9.4ms
+image 44/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8579.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 9.3ms
+image 45/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8605.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 46/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8610.JPG: 640x480 1 green_onion_1, 8.9ms
+image 47/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8623.JPG: 640x480 1 green_onion_1, 8.9ms
+image 48/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8649.JPG: 640x480 1 green_onion_1, 8.8ms
+image 49/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8656.JPG: 640x480 1 green_onion_1, 8.9ms
+image 50/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8732.JPG: 640x480 1 green_onion_1, 8.9ms
+image 51/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8737.JPG: 640x480 1 green_onion_1, 8.9ms
+image 52/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8776.JPG: 640x480 1 green_onion_1, 8.8ms
+image 53/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8791.JPG: 640x480 1 green_onion_1, 8.9ms
+image 54/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8800.JPG: 640x480 1 green_onion_1, 8.8ms
+image 55/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8813.JPG: 640x480 1 green_onion_1, 8.9ms
+image 56/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8856.JPG: 640x480 1 green_onion_1, 8.8ms
+image 57/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8916.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 58/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8969.JPG: 640x480 1 green_onion_1, 8.8ms
+image 59/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_8973.JPG: 640x480 1 green_onion_1, 8.8ms
+image 60/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9028.JPG: 640x480 1 green_onion_1, 8.8ms
+image 61/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9039.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 62/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9080.JPG: 640x480 1 green_onion_1, 9.0ms
+image 63/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9160.JPG: 640x480 1 green_onion_1, 8.9ms
+image 64/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9284.JPG: 640x480 1 green_onion_2, 9.4ms
+image 65/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9288.JPG: 640x480 1 green_onion_1, 8.8ms
+image 66/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9292.JPG: 640x480 1 green_onion_1, 8.9ms
+image 67/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9322.JPG: 640x480 1 green_onion_1, 8.9ms
+image 68/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9345.JPG: 640x480 1 green_onion_1, 8.8ms
+image 69/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9396.JPG: 640x480 1 green_onion_1, 8.9ms
+image 70/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9405.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.9ms
+image 71/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9417.JPG: 640x480 1 green_onion_1, 9.8ms
+image 72/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9451.JPG: 640x480 1 green_onion_2, 1 green_onion_3, 9.1ms
+image 73/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9460.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 9.2ms
+image 74/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9476.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 9.1ms
+image 75/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9506.JPG: 640x480 1 green_onion_2, 9.3ms
+image 76/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9525.JPG: 640x480 1 green_onion_1, 8.9ms
+image 77/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9547.JPG: 640x480 1 green_onion_1, 9.8ms
+image 78/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9556.JPG: 640x480 1 green_onion_1, 8.8ms
+image 79/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9559.JPG: 640x480 1 green_onion_1, 9.7ms
+image 80/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9576.JPG: 640x480 1 green_onion_1, 9.2ms
+image 81/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9580.JPG: 640x480 1 green_onion_1, 8.9ms
+image 82/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9609.JPG: 640x480 1 green_onion_1, 8.9ms
+image 83/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9619.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 9.8ms
+image 84/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9677.JPG: 640x480 1 green_onion_1, 8.9ms
+image 85/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9701.JPG: 640x480 1 green_onion_1, 8.9ms
+image 86/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9706.JPG: 640x480 1 green_onion_1, 8.9ms
+image 87/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9716.JPG: 640x480 1 green_onion_1, 8.9ms
+image 88/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9741.JPG: 640x480 1 green_onion_1, 8.9ms
+image 89/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9745.JPG: 640x480 1 green_onion_1, 1 green_onion_2, 8.8ms
+image 90/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9750.JPG: 640x480 1 green_onion_1, 9.6ms
+image 91/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9757.JPG: 640x480 1 green_onion_1, 8.9ms
+image 92/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9762.JPG: 640x480 1 green_onion_1, 8.8ms
+image 93/93 /home/it/work/negi/yolo/datasets/negi/test/1/IMG_9770.JPG: 640x480 1 green_onion_1, 9.3ms
+Speed: 0.3ms pre-process, 9.8ms inference, 0.5ms NMS per image at shape (1, 3, 640, 640)
+Results saved to runs/detect/no_using_pretrained_1
